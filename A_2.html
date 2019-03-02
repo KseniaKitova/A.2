@@ -1,6 +1,10 @@
 <script>
 	
 	var sum = +prompt("Enter sum");
+	
+		if (sum > 8880) {
+			alert (" Введите сумму 8880 или меньше")
+			}
 
 		var k500 = Math.floor(sum / 500);
 			if(k500>10){
@@ -106,14 +110,12 @@
 			if(k1>10){
 				k1=10; 
 				sum = sum - (1*k1);	
-				console.log("1 x", k1);
-				console.log("В банкомате больше нет денег.");
 			}
 			else {
 				sum = sum - (1*k1);
-				console.log("1 x", k1);
 			}
 			
+			console.log("1 x", k1);
 	 
 	var all_sum = k500+k200+k100+k50+k20+k10+k5+k2+k1;
 	console.log("all sum", all_sum);
